@@ -3,7 +3,9 @@ import ProductsList from './components/ProductsList'
 import Cart from './components/Cart'
 
 import React from 'react';
-import { ToastContainer } from 'react-toastify';
+
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useState, useEffect } from 'react'
 import { StyleApp } from './style';
@@ -25,7 +27,7 @@ function App() {
   }, []);
 
   function clearString(str){
-    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ /g, "")
+    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ /g, "").replace(/[^0-9a-zA-Z]/g, '');
   }
 
   function showProducts(produto){
@@ -43,7 +45,9 @@ function App() {
     if(newProduct === undefined){
       setCurrentSale([...currentSale, produto])
       console.log(currentSale)
-    } 
+    } else {
+      toast.error( "Este produto já está no carrinho" )
+    }
   } 
 
   function handleRemove(produtoRemove){
@@ -55,6 +59,7 @@ function App() {
   }
   return (
     <div className="App">
+      <ToastContainer />
       <Dashboard showProducts={showProducts}/>
       <StyleApp>
         <ProductsList products={filteredProducts.length > 0 ? filteredProducts : products} addCart={addCart}/>

@@ -8,8 +8,8 @@ export const StyleSection = styled.section`
         overflow-y: inherit;
     }
     @media (min-width: 1070px) {
-        position: relative;
-        top: 100px;
+        /* position: relative;
+        top: 100px; */
     }
 
 `

@@ -16,27 +16,25 @@ const Header = ({ showProducts }) => {
 
     return(
         <StyledHeader>
-             <Container>
-                <div className='header'>
-                    <img src={Logo} alt="Logo" />
-                    <div className='search'>
-                        <form onSubmit={(event) => {
-                            event.preventDefault()
-                            showProducts(searchInput)
-                        }}>
-                            <ThemeInput 
-                                type="text"
-                                InputSize="lg"
-                                InputStyle="solid"
-                                placeholder="Digite sua pesquisa"
-                                value={searchInput}
-                                onChange= {(event) => setSearchInput(event.target.value)}>    
-                            </ThemeInput>
-                            <ThemeButton type="submit" buttonSize="md" buttonStyle="solid">Teste</ThemeButton>
-                        </form>
-                    </div>
+            <div className='header'>
+                <img src={Logo} alt="Logo" />
+                <div className='search'>
+                    <form onSubmit={(event) => {
+                        event.preventDefault()
+                        showProducts(searchInput)
+                    }}>
+                        <ThemeInput 
+                            type="text"
+                            InputSize="lg"
+                            InputStyle="solid"
+                            placeholder="Digite sua pesquisa"
+                            value={searchInput}
+                            onChange= {(event) => setSearchInput(event.target.value)}>    
+                        </ThemeInput>
+                        <ThemeButton type="submit" buttonSize="md" buttonStyle="solid">Teste</ThemeButton>
+                    </form>
                 </div>
-            </Container>
+            </div>  
         </StyledHeader>   
     )
 }

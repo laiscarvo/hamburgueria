@@ -5,23 +5,19 @@ export const StyledHeader = styled.header`
     min-height: 10vh;
     padding: .3rem 0;
     background: var(--Grey0);
-    & > div {
-        align-items: center;
-        justify-items: center;
-    }
-    .img{
-        @media (min-width: 1400px) {
-            
-            
-        }
-    }
+    margin: auto;
+    
     .header{
+        justify-content: center;
         align-items: center;
         gap: 0.5rem;
         @media (min-width: 520px){
+            width: 90vw;
+            margin: auto;
             flex-direction: row;
             justify-content: space-between;
         }
+
     }
     .search{
         max-width: 300px;

@@ -3,28 +3,31 @@ import styled from 'styled-components'
 
 export const StyledCart = styled.section`
 
-    max-width: 400px;
+    /* max-width: 400px; */
     
     
-    @media (min-width: 1400px) {
+    
+    /* @media (min-width: 1400px) {
         position: relative;
-        top: 200px;
+        top: 150px;
         right: 50px; 
     }
     @media (min-width: 1450px){
         position: relative;
-        left: 50px; 
+        left: ;
+        
     }
     @media (min-width: 1600px){
         position: relative;
         left: 180px;
-    }
+    } */
     
-    
+    margin-top: 45px;
     .cart{
         background: var(--Grey0);
         max-width: 320px;
-        position: absolute;
+        margin: auto;
+        /* position: absolute; */
         
     }
 
