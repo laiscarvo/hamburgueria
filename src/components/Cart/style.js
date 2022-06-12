@@ -78,10 +78,12 @@ export const StyledCart = styled.section`
         justify-content: space-between;
     }
     .ulCart{
-        padding: 1rem 1rem;
+        padding: 1rem 0.3rem;
         gap: 10px;
         overflow-x: scroll;
         max-height: 200px;
+        max-width: 320px;
+        overflow: auto;
 
     }
     .price{
@@ -101,6 +103,7 @@ export const StyledCart = styled.section`
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: .3rem .3rem;
+        padding: .3rem 0rem;
+        max-width: 310px;
     }
 `
