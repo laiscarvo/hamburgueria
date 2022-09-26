@@ -45,6 +45,6 @@ Para aprender o React, confira a [documentação do React](https://reactjs.org/)
 
 # Autores
 
-| [<img src="https://ca.slack-edge.com/TQZR39SET-U0304KDE54H-13abb78ee401-512" width=115><br><sub>Lais Carvalho de Oliveira</sub>](https://github.com/laiscarvo)
+| [<img src="https://avatars.githubusercontent.com/u/99590932?v=4" width=115><br><sub>Lais Carvalho de Oliveira</sub>](https://github.com/laiscarvo)
 | :---: |
 
