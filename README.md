@@ -1,4 +1,6 @@
-# Descrição do Projeto
+# 🏁 Hamburgueria Kenzie
+
+## Descrição do Projeto
 
 O objetivo desto projeto é construir uma aplicação baseada no que aprendi em React, como também aperfeiçoar habilidades de estilização.
 
