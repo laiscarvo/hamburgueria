@@ -1,3 +1,5 @@
+![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
+
 # 🏁 Hamburgueria Kenzie
 
 ## Descrição do Projeto
